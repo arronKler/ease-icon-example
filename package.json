@@ -1,0 +1,11 @@
+{
+  "name": "ease-icon-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:arronKler/ease-icon-example.git",
+  "author": "arronKler <panzer9@126.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
