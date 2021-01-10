@@ -1,5 +1,5 @@
 {
-  "name": "@ease-icon/vue-basic",
+  "name": "@ease-icon/vue-{name}",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "license": "MIT"
