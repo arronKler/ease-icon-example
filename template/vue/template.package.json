@@ -1,6 +1,6 @@
 {
   "name": "@ease-icon/vue-{name}",
   "version": "1.0.0",
-  "main": "./dist/index.js",
+  "main": "./dist/index.bundle.js",
   "license": "MIT"
 }

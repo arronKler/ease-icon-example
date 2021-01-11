@@ -5,6 +5,9 @@
   "repository": "git@github.com:arronKler/ease-icon-example.git",
   "author": "arronKler <panzer9@126.com>",
   "license": "MIT",
+  "scripts": {
+    "bootstrap": "lerna bootstrap"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
