@@ -1,0 +1,6 @@
+{
+  "name": "@ease-icon/vue-business",
+  "version": "1.0.0",
+  "main": "./dist/index.bundle.js",
+  "license": "MIT"
+}

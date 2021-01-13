@@ -2,7 +2,7 @@
   <div class="panel">
     <el-form label-width="80px">
       <el-form-item label="大小">
-        <el-slider v-model="size" :min="12" :max="58"></el-slider>
+        <el-slider v-model="size" :min="24" :max="70"></el-slider>
       </el-form-item>
 
       <el-form-item label="常规色彩">
@@ -42,6 +42,9 @@ export default {
     colors(val) {
       this.$emit('colors', val);
     },
+    darkMode(val) {
+      this.$emit('darkMode', val)
+    }
   },
 };
 </script>

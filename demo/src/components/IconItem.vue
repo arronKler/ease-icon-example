@@ -1,10 +1,10 @@
 <template>
   <div class="item">
     <div class="icon-wrapper">
-      <component :is="'I' + name" :size="size" :colors="colors"></component>
+      <component :is="prefix + name" :size="size" :colors="colors"></component>
     </div>
     <div class="infos">
-      <div class="name">{{ name }}</div>
+      <div class="name">{{ 'I' + name }}</div>
     </div>
     <el-dropdown style="align-self: center" @command="onCommand">
       <div class="opt">
@@ -12,8 +12,8 @@
       </div>
 
       <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item>复制 SVG 源码</el-dropdown-item>
         <el-dropdown-item>复制 Vue 代码</el-dropdown-item>
+        <el-dropdown-item>复制 SVG 源码</el-dropdown-item>
         <el-dropdown-item>复制 iconfont 代码</el-dropdown-item>
         <el-dropdown-item divided></el-dropdown-item>
         <el-dropdown-item>下载 PNG 图片</el-dropdown-item>
@@ -29,6 +29,8 @@ export default {
     name: String,
     size: String,
     colors: Array,
+
+    prefix: String,
   },
   methods: {
     onCommand() {
@@ -41,7 +43,7 @@ export default {
 <style lang="less">
 .item {
   border-radius: 4px;
-  width: 230px;
+  width: 200px;
   height: auto;
   margin: 10px;
   padding: 10px;
@@ -60,20 +62,25 @@ export default {
     margin-right: 10px;
     flex: 1;
     text-align: left;
+    display: flex;
+    align-items: center;
   }
 
   .opt {
     align-self: center;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
+    background-color: #ccc;
+    cursor: pointer;
 
     &:hover {
-      background-color: #ccc;
+      box-shadow: 0 0 10px #999;
+      background-color: #999;
     }
   }
 }

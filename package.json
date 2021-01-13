@@ -6,15 +6,14 @@
   "author": "arronKler <panzer9@126.com>",
   "license": "MIT",
   "scripts": {
-    "bootstrap": "lerna bootstrap"
+    "install": "npm install && cd demo && npm install",
+    "optimize": "ecion optimize",
+    "build": "eicon build",
+    "build:iconfont": "eicon build -t iconfont",
+    "serve": "cd demo && npm run serve",
+    "publish": "eicon publish"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "babel-helper-vue-jsx-merge-props": "^2.0.3",
-    "babel-plugin-syntax-jsx": "^6.18.0",
-    "babel-plugin-transform-vue-jsx": "^3.7.0",
     "lerna": "^3.22.1"
-  },
-  "dependencies": {}
+  }
 }
