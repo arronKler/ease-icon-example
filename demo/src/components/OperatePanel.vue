@@ -1,14 +1,6 @@
 <template>
   <div class="panel">
     <el-form label-width="80px">
-      <el-form-item label="大小">
-        <el-slider v-model="size" :min="24" :max="70"></el-slider>
-      </el-form-item>
-
-      <el-form-item label="常规色彩">
-        <el-color-picker v-model="colors[0]"></el-color-picker>
-        <el-color-picker v-model="colors[1]"></el-color-picker>
-      </el-form-item>
       <el-form-item label="黑夜模式">
         <el-switch
           v-model="darkMode"
@@ -17,10 +9,19 @@
         >
         </el-switch>
       </el-form-item>
-      <el-form-item v-if="darkMode" label="黑夜色彩">
+
+      <el-form-item label="图标大小">
+        <el-slider v-model="size" :min="24" :max="70"></el-slider>
+      </el-form-item>
+      <!-- <el-form-item label="常规色彩">
+        <el-color-picker v-model="colors[0]"></el-color-picker>
+        <el-color-picker v-model="colors[1]"></el-color-picker>
+      </el-form-item> -->
+      
+      <!-- <el-form-item v-if="darkMode" label="黑夜色彩">
         <el-color-picker v-model="darkColors[0]"></el-color-picker>
         <el-color-picker v-model="darkColors[1]"></el-color-picker>
-      </el-form-item>
+      </el-form-item> -->
     </el-form>
   </div>
 </template>

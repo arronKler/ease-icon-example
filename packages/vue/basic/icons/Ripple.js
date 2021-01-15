@@ -18,12 +18,7 @@ export default {
   name: "Ripple",
   data() {
     return {
-      defaultColors: [
-        "$MainStrokeColor$",
-        "$MainFillColor$",
-        "$SecondStrokeColor$",
-        "$SecondFillColor$",
-      ],
+      innerColors: [],
     }
   },
   render() {
