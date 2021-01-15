@@ -6,14 +6,14 @@
   "author": "arronKler <panzer9@126.com>",
   "license": "MIT",
   "scripts": {
-    "install": "npm install && cd demo && npm install",
-    "optimize": "ecion optimize",
     "build": "eicon build",
     "build:iconfont": "eicon build -t iconfont",
     "serve": "cd demo && npm run serve",
-    "publish": "eicon publish"
+    "publish": "eicon publish",
+    "postinstall": "cd demo && yarn install"
   },
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^3.22.1",
+    "ease-icon-cli": "^1.0.0"
   }
 }
