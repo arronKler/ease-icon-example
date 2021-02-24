@@ -13,7 +13,8 @@
     "postinstall": "cd demo && yarn install"
   },
   "devDependencies": {
-    "lerna": "^3.22.1",
-    "ease-icon-cli": "^1.0.0"
-  }
+    "ease-icon-cli": "^1.2.2",
+    "lerna": "^3.22.1"
+  },
+  "dependencies": {}
 }

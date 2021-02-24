@@ -15,7 +15,7 @@
             :key="comp.name"
             :name="comp.name"
             :size="size"
-            :colors="colors"
+            :dark="darkMode"
           ></IconItem>
         </section>
       </template>

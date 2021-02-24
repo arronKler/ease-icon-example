@@ -1,7 +1,7 @@
 <template>
   <div class="item">
     <div class="icon-wrapper">
-      <component :is="prefix + name" :size="size" :colors="colors"></component>
+      <component :is="prefix + name" :size="size" :colors="colors" :dark-mode="dark"></component>
     </div>
     <div class="infos">
       <div class="name">{{ 'I' + name }}</div>
@@ -29,7 +29,7 @@ export default {
     name: String,
     size: String,
     colors: Array,
-
+    dark: Boolean,
     prefix: String,
   },
   methods: {
